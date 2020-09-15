@@ -1,0 +1,45 @@
+:root {
+    --color-background: #d7d2da;
+    --color-text-button: white;
+    --color-background-button: #6c4681;
+    --color-background-button-light: #8b61a1;
+    --color-background-box: #7b767e;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+#adicionar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-background-button);
+    color: var(--color-text-button);
+
+    border: 0px;
+    border-radius: 4px;
+    height: 25px;
+    margin: 0px;
+    margin-left: 10px;
+
+    transition: .5s;
+}
+
+#adicionar:hover {
+    background-color: var(--color-background-button-light);
+    cursor: pointer;
+}
+
+#campoDeEntrada {
+    height: 25px;
+
+    border-radius: 2px;
+    padding: 0px;
+    padding-left: 5px;
+    border: 0px;
+}
+
+#box {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}

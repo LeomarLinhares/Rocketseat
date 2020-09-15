@@ -1,0 +1,40 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-light: #916BEA;
+    --color-primary-darker: #6842C2;
+    --color-button-text: #FFFFFF;
+}
+
+body {
+    background: var(--color-background);
+}
+
+#quadrado {
+    margin: 10px;
+}
+
+#container {
+    width: auto;
+    height: 500px;
+}
+
+button {
+    background-color: var(--color-primary-darker);
+    color: var(--color-button-text);
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    border-radius: 9px;
+    border: 0px;
+    width: 180px;
+    height: 50px;
+
+    margin-bottom: 50px;
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--color-primary-light);
+}
