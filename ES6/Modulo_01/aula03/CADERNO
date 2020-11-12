@@ -1,0 +1,37 @@
+Primeiramente é feito um comando 
+    yarn init
+
+Esse comando é feito em um terminal aberto na pasta onde estará localizada o
+nosso projeto.
+
+Vai ser criado um package.json que armazena as dependências da nossa aplicação.
+Não é necessário escrever sempre no package.json, podemos utilizar o terminal para
+instalar as dependências.
+
+    - yarn add @babel/cli
+        : utilizado para dar possibilidade de trabalhar com a interface de linha
+          comando do babel
+    
+    -yarn add @babel/preset-env
+        : feito para trabalhar com o browser;
+
+2 coisas serão criadas:
+    - yarn.lock, que nunca iremos mexer, é como uma forma de cache.
+    - pasta node_modules, onde vão estar as dependências do projeto.
+
+Com a pasta node_modules existindo, é um bom momento para criar o .gitignore
+na pasta contendo:
+
+    node_modules/
+
+Depois disso configuramos o babel, criando um arquivo chamado .babelrc.
+O Babel faz as coisas do ES6+ serem entendidas por todos os navegadores.
+
+No .babelrc é bom ter os presets que colocamos, assim:
+
+    {
+        "presets": ["@babel/preset-env"]
+    }
+
+Criar index.html e main.js
+
